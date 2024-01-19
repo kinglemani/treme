@@ -1,0 +1,157 @@
+body {
+    background-image: url("Point\ Blur_Dec052023_223438.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0 auto;
+    background-attachment: fixed;
+}
+* {
+    box-sizing: border-box;
+    font-family: sans-serif;
+    color: rgb(255, 255, 255);
+    font-size: 25px;
+    font-weight: 700;
+}
+header {
+    background-color: grey;
+    width: 100%;
+    color: white;
+    position: fixed;
+    top: 0;
+    padding: 3px;
+    text-align: center;
+    height: 50px;
+    z-index: 3;
+}
+k {color: dimgray;}
+main {
+    padding-top: 55px;
+    padding-bottom: 20px;
+}
+.h1, h1{
+    text-align: center;
+}
+.forever, .holy, .about, .share{
+    width: 1%;
+    transform-origin: left;
+    height: 260px;
+    margin: 5px auto;
+    text-align: center;
+    overflow: hidden;
+    border-radius: 5px;
+    animation: 20s linear 5s 1 forwards stretch;
+}
+@keyframes stretch {
+    from {width: 1%;}
+    to {width: 90%;}
+}
+footer {
+    width: 100%;
+    text-align: center;
+    background-color: gray;
+    padding: 1px;
+}
+.forever {
+    background-image: url("IMG_20231204_125506.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 500px;
+}
+.holy {
+    background-image: url("Point\ Blur_Dec122023_212524.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 500px;
+}
+.about {
+    background-image: url("IMG_20231015_150827_596.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 500px;
+}
+.share {
+    background-image: url("FB_IMG_16974765457232800.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 500px;
+}
+span aside {
+    transition: transform 0.5s linear 1.5s;
+    transform: scale(1, 0);
+    transform-origin: top center;
+    background-color: rgb(32, 31, 31);
+    color: white;
+    padding: 5px;
+    width: 240px;
+}
+span:hover aside, span:focus aside {
+    transition-delay: 400ms;
+    transform: scale(1, 1);
+    width: 240px;
+}
+span {
+    width: 25px;
+}
+span:hover, span:focus{
+    background-color: rgb(73, 72, 72);
+    height: 26px;
+}
+ul {list-style: none;text-align: left;}
+li {margin-bottom: 2px;}
+a:hover, a:focus {color: blue;}
+a:active{color: red;}
+a {text-decoration: none;}
+option{color: black;}
+.slideshow {
+    width: 90%;
+    height: 260px;
+    margin: 5px auto;
+    text-align: center;
+    border-radius: 5px;
+    background-image: url("Point\ Blur_Dec052023_223438.jpg");
+    background-position: center;
+    background-size: 100% 400px;
+    animation: 100s steps(20, start) 30s infinite slideshow;
+}
+@keyframes slideshow {
+    from {background-image: url("Point\ Blur_Dec052023_223438.jpg");animation-delay: 20s;}
+    4% {background-image: url("FB_IMG_16974765924546343.jpg");animation-delay: 20s;}
+    8% {background-image: url("FB_IMG_16974765457232800.jpg");animation-delay: 20s;}
+    12% {background-image: url("FB_IMG_16974765548417158.jpg");animation-delay: 20s;}
+    16% {background-image: url("FB_IMG_16974765924546343.jpg");animation-delay: 20s;}
+    20% {background-image: url("FB_IMG_16974766542605110.jpg");animation-delay: 20s;}
+    24% {background-image: url("FB_IMG_16992861408189925.jpg");animation-delay: 20s;}
+    28% {background-image: url("FB_IMG_16992861496406446.jpg");animation-delay: 20s;}
+    32% {background-image: url("IMG_20230905_174055_175.jpg");animation-delay: 20s;}
+    36% {background-image: url("IMG_20230907_184953_086.jpg");animation-delay: 20s;}
+    40% {background-image: url("IMG_20230907_184953_086\(0\).jpg");animation-delay: 20s;}
+    44% {background-image: url("IMG_20231015_144716_948.jpg");animation-delay: 20s;}
+    48% {background-image: url("IMG_20231015_150827_596.jpg");animation-delay: 20s;}
+    52% {background-image: url("IMG_20231102_134430_644.jpg");animation-delay: 20s;}
+    56% {background-image: url("IMG_20231204_125506.jpg");animation-delay: 20s;}
+    60% {background-image: url("IMG_20231204_125514.jpg");animation-delay: 20s;}
+    64% {background-image: url("IMG_20231204_125518.jpg");animation-delay: 20s;}
+    68% {background-image: url("IMG_20231204_125523.jpg");animation-delay: 20s;}
+    72% {background-image: url("IMG_20231225_112807_999.jpg");animation-delay: 20s;}
+    76% {background-image: url("Point\ Blur_Dec052023_223438.jpg");animation-delay: 20s;}
+    80% {background-image: url("Point\ Blur_Dec052023_223653.jpg");animation-delay: 20s;}
+    84% {background-image: url("Point\ Blur_Dec122023_212524.jpg");animation-delay: 20s;}
+    to {background-image: url("Point\ Blur_Dec152023_214844.jpg");animation-delay: 20s;}
+}
+header, footer {
+    animation: 3s linear 30s infinite border_color;
+}
+@keyframes border_color {
+    from {background: linear-gradient(45deg,blueviolet, blue 60%, blueviolet);}
+    10% {background: linear-gradient(45deg,red, tomato 60%, red);}
+    20% {background: linear-gradient(45deg,green, yellowgreen 60%, green);}
+    30% {background: linear-gradient(45deg,blue, navy 60%, blue);}
+    40% {background: linear-gradient(45deg,black, gray 60%, black);}
+    50% {background: linear-gradient(45deg,yellow, greenyellow 60%, yellow);}
+    60% {background: linear-gradient(45deg,orange, orangered 60% orange);}
+    70% {background: linear-gradient(45deg,teal, green 60%, teal);}
+    80% {background: linear-gradient(45deg,crimson, brown 60%, crimson);}
+    90% {background: linear-gradient(45deg,orangered, yellow 60%, orangered);}
+    to {background: linear-gradient(45deg,chocolate, brown 60%, chocolate);}
+}
